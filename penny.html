@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网页</title>
+    <style>
+        @font-face {
+            font-family: 'ok';
+            src: url('素材集市康康体3.0.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'ok2';
+            src: url('三极悠闲宋简体.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'ok2';
+            margin: 10px;
+            padding: 10px;
+            background-color: #cac8c8;
+            background: url('https://pcsdata.baidu.com/thumbnail/afa31c0b4kb1549699789c17131d800f?fid=1449835279-16051585-933334196066145&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-R1aFzDrXzH9g3aG4OLoeePusi1M%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=9200280181292217449&dp-callid=0&time=1739869200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video');
+            color: #333;
+            background-size: cover;
+            
+            
+        }
+        .container {
+            /* background-image: url('https://pcsdata.baidu.com/thumbnail/906015576o83769b538be916899ecd5c?fid=1449835279-16051585-582531149003095&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-qn3e10Rv1PFAK8S0M%2B8cM0uXDw0%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=9127415100222670130&dp-callid=0&time=1739595600&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video'); */
+            width: 1300px;
+            height: 645px;
+            margin: 0 auto;
+            padding: 20px;
+            background:linear-gradient(rgba(252, 249, 255, 0.63), rgba(246, 245, 255, 0.901));
+            border-radius: 37px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.41);
+            
+        }
+        h1 {
+            /*将整体居中
+            SUMOXIAOZHAN*/
+            margin: 17px auto;
+            margin-bottom: 29px;
+            width: 230px;
+            height: 70px;
+            background-color: #e6e6e6;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgb(0, 0, 0);
+            color: #fdf8ff;
+            border-radius: 55px;
+            /* border-style:dashed;
+            border-color: #413942;
+            border-width: 5px; */
+            opacity: 0.48;
+            background-image: url('https://pcsdata.baidu.com/thumbnail/afa31c0b4kb1549699789c17131d800f?fid=1449835279-16051585-933334196066145&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-R1aFzDrXzH9g3aG4OLoeePusi1M%3D&expires=48h&chkv=0&chkbd=0&chkpc=&dp-logid=9200280181292217449&dp-callid=0&time=1739869200&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video');
+            
+        }
+        .profile {
+            border-radius: 45px;
+            background: linear-gradient(to bottom right, rgba(255, 244, 246, 0.392), rgba(235, 231, 248, 0.671));
+            text-align: center;
+            margin-bottom: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: 315px;
+            border-style: solid;
+            border-color: #ffffff;
+            border-width: 3px;
+            box-shadow: 3px 4px 8px rgba(37, 33, 51, 0.362);
+            
+        }
+        .profile img {
+            width: auto;
+            height: 150px;
+            border-radius: 45px;
+            border: 4px solid #ffffff;
+            margin-top: 30px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            box-shadow: 1px 2px 6px rgba(37, 33, 51, 0.486);
+        }
+        .profile h2 {
+            margin: 8px 0;
+        }
+        .profile p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: rgb(116, 112, 117);
+            margin-bottom: 22px;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 14px;
+        }
+        .social-links a {
+            font-family: "ok";
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px;
+            background: #6d6489;
+            color: #fff;
+            border-radius: 19px;
+            text-decoration: none;
+            font-size: 25px;
+            border-style: solid;
+            border-color: rgba(71, 71, 84, 0.333);
+        }
+        
+        .social-links2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .social-links2 a {
+            font-family: SongTi;
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px;
+            background: #736d76;
+            color: #fff;
+            border-radius: 33px;
+            text-decoration: none;
+            font-size: 13px;
+            opacity: 0.85;
+            /* 添加边框 */
+            border-style: solid;
+            border-color: rgba(71, 71, 84, 0.333);
+        }
+        .social-links a:hover {
+            background: #2d2347;
+        }
+        .social-links2 a:hover {
+            background: #ffffff;
+            color: #666372;
+            border-color: rgba(67, 67, 70, 0.099);
+        }
+        .cai {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-family: "ok";
+            color: #514d63;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    
+    <div class="header">
+        <h1 onclick="clicksmxz()">素茉小站</h1>
+    </div>
+    
+    <div class="profile">
+        <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.NdQYhplQ9_kkER0c-AFNiQAAAA?rs=1&pid=ImgDetMain" alt="no image">
+        <img src="https://k.sinaimg.cn/n/sinakd20117/560/w1080h1080/20230124/180b-092953c8d4e22578ca0ed12db1bd0591.jpg/w700d1q75cms.jpg" alt="no">
+        <img src="https://www.keaitupian.cn/cjpic/frombd/2/253/2321321159/1125328585.jpg" alt="nu0">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.43bf510c3839eb604f8d9308ca66a614?rik=KYR1wnT58FFZUQ&riu=http%3a%2f%2fc-ssl.duitang.com%2fuploads%2fitem%2f202004%2f05%2f20200405185419_eysjn.thumb.1000_0.jpg&ehk=YtTzFHR0MCM%2b5K%2b0Ts4wkEcJV98a8DFWximG%2ftc20%2fs%3d&risl=&pid=ImgRaw&r=0" alt="no">
+
+        <h2><i>欢迎访问我的网站</i></h2>
+        <p><你可以通过下面的方式联系我๑'ꇴ'๑></p>
+    </div>
+    <div class="cai">
+        <p>
+            猜你想看
+        </p>
+    </div>
+    <div class="social-links">
+        <a href="https://space.bilibili.com/85588613" target="_blank">B站</a>
+        <a href="https://video.weibo.com/show?fid=1034:4857568162676748" target="_blank">微博</a>
+        <a href="https://www.zhihu.com/question/337453342/answer/839385116" target="_blank">知乎</a>
+        <a href="#" onclick="clickxhs()">小红书</a>
+        <a href="#" onclick="clickdy()">抖音</a>
+        <a href="https://qm.qq.com/q/ETjeOF67rU" target="_blank">添加我的QQ</a>
+        <a href="#" onclick="clickwx()" >添加我的微信</a>
+        <a href="#" onclick="clickgithub()">github</a>
+        
+    </div>
+    <div class="social-links2">
+        <a href="https://afdian.com/a/penny985211" target="_blank">欢迎来爱发电支持我</a>
+    </div>
+    <div>
+        <p style="text-align:center; margin-top: 19px;font-size: 10px;">© 2025 Penny. All rights reserved.</p>
+    </div>
+</div>
+<!-- <embed src="number one girl.mp3" autostart="true" loop="true" hidden="true"></embed> -->
+
+
+<script>
+    function clickgithub() {
+        alert('想看我的代码库吗？');
+    }
+    function clickxhs() {
+        alert('好事全让你占了是吧');
+    }
+    function clickdy() {
+        alert('还点开看呢？');
+    }
+    function clickwx() {
+        alert('你是不是想加我微信？');
+    }
+    function clicksmxz() {
+        alert('你点我干嘛？');
+    }
+</script>
+
+
+</body>
+</html>
